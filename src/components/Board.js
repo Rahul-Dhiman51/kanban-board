@@ -11,8 +11,8 @@ const Board = () => {
     const [tickets, setTickets] = useState([]);
     const [users, setUsers] = useState([]);
     const [open, setOpen] = useState(false);
-    const [groupingOption, setGroupingOption] = useState('status');
-    const [sortingOption, setSortingOption] = useState('priority');
+    const [groupingOption, setGroupingOption] = useState(localStorage.getItem("groupingOption") || "status");
+    const [sortingOption, setSortingOption] = useState(localStorage.getItem("sortingOption") || "priority");
 
     useEffect(() => {
         async function fetchData() {
@@ -23,6 +23,14 @@ const Board = () => {
         }
         fetchData();
     }, []);
+
+    useEffect(() => {
+        localStorage.setItem("groupingOption", groupingOption);
+      }, [groupingOption]);
+
+      useEffect(() => {
+        localStorage.setItem("sortingOption", sortingOption);
+      }, [sortingOption]);
 
     const menuRef = useRef();
     useEffect(() => {
