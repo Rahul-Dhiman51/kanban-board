@@ -3,21 +3,5 @@
     flex-direction: column;
     margin: 5px;
     padding: 0px;
-    /* border: 1px solid #ccc;
-    border-radius: 4px; */
     width: 350px;
 }
-
-/* CSS */
-.check-icon::before {
-    content: "\2713"; /* Unicode checkmark character */
-  }
-  
-  .exclamation-icon::before {
-    content: "\26A0"; /* Unicode warning/exclamation mark character */
-  }
-  
-  .user-icon::before {
-    content: "\263A"; /* Unicode user symbol character */
-  }
-  
