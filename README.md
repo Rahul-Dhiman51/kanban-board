@@ -1,4 +1,4 @@
-# Link to the deployed project - https://kanban-board-rd.netlify.app/
+## Link to the deployed project - https://kanban-board-rd.netlify.app/
 
 # Getting Started with Create React App
 
